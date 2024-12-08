@@ -319,3 +319,29 @@ input[type="range"]:focus {
     width: 10px;
     height: 10px;
 }
+
+/* CONTACT SECTION */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .text {
+    padding-top: 18%;
+}
+
+.contact-container .text .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-container .text .socials .discord {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container .text .socials .discord i label{
+    padding: 15px;
+}
