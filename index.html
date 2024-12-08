@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+        
+
+    <header class="navhead animate-on-load header-animate">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+
+        <div class="links">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div id="music-player" class="music-player">
+        <div id="nowPlaying">Now Playing: <span id="songName">Song Title</span></div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="playPauseBtn">▶</button>
+            <input type="range" id="progressBar" value="0" max="100">
+            <div id="currentTime">0:00</div> / <div id="duration">0:00</div>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="image animate-on-load">
+            <img src="pfp.jpg">
+        </div>
+
+        <div class="text animate-on-load">
+            
+            <div class="title">
+                <h1>Hi, It's<span> aandreiii</span></h1>
+            </div>
+
+            <div class="whatami">
+                <h2>I'm a <span class="typing"></span></h2>
+            </div>
+
+            <div class="intrdoc">
+                <p>I'm a 16-year-old developer with 2 years of experience in coding and creating innovative projects. Passionate about technology, I love exploring new challenges and building impactful solutions. 
+                </p>
+            </div>
+
+            <div class="socials">
+                <a href="https://x.com/aandreiim" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/aandreii.mr/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.reddit.com/user/arreyyy937/" target="_blank"><i class='bx bxl-reddit'></i></a>
+                <a href="https://paypal.me/AndreiMiron208?country.x=IT&locale.x=en_US" target="_blank"><i class='bx bxl-paypal' ></i></a>
+            </div>
+
+            <div class="btn">
+                <button onclick="window.location.href = 'about.html';">learn more</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
