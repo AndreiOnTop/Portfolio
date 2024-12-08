@@ -192,7 +192,23 @@ body {
     }
 }
 
-.card-container {
+.card-container-web {
+    animation: fadeInUp 1s ease-out;
+}
+
+.card-container-rblx {
+    animation: fadeInUp 1s ease-out;
+}
+
+.web-title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.rblx-title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.main-container {
     animation: fadeInUp 1s ease-out;
 }
 
@@ -201,6 +217,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .music-player {
+        visibility: hidden;
+    }
     .menu-toggle {
         display: block;
     }
@@ -338,12 +357,14 @@ input[type="range"]:focus {
 
 /* CARDS */
 
-.card-container {
+.card-container-web {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
+    border-bottom: solid 1px rgb(58, 58, 58);
+    padding-bottom: 50px;
 }
 
 .card {
@@ -354,11 +375,12 @@ input[type="range"]:focus {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
     transition: all .3s ease;
-    border: solid 1px white;
+    border: solid 1px #666;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(1deg);
+    
 }
 
 .card img {
@@ -391,10 +413,34 @@ input[type="range"]:focus {
     margin-top: 16px;
     color: #fff;
     transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-content .card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-content .card-footer i {
+    border: solid 1px #666;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+    transition: all .3s ease;
+}
+
+.card-footer i:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
 }
 
 .btn:hover {
-    transform: rotate(5deg);
+    transform: scale(1.1);
 }
 
 .btn:active {
@@ -402,3 +448,74 @@ input[type="range"]:focus {
     background-color: rgb(80, 0, 255);
 }
 
+
+/* MAIN CONTAINER */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px rgb(58, 58, 58);
+    border-bottom: solid 1px rgb(58, 58, 58);
+    padding: 60px;
+}
+
+.main-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .content .title {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content .buttons {
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.content .buttons a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: solid 1px white;
+    font-size: 20px;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.buttons a:hover {
+    transform: scale(1.1);
+    background-color: rgb(76, 0, 255);
+    border: none;
+}
+
+.content .description {
+    padding-top: 40px;
+    letter-spacing: 1.5px;
+}
+
+.web-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rblx-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

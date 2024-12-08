@@ -185,6 +185,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .music-player {
+        visibility: hidden;
+    }
+    
     .menu-toggle {
         display: block;
     }
@@ -323,25 +327,63 @@ input[type="range"]:focus {
 /* CONTACT SECTION */
 .contact-container {
     display: flex;
+    margin-top: 200px;
     justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
 }
 
 .contact-container .text {
-    padding-top: 18%;
+    max-width: 600px;
 }
 
-.contact-container .text .title {
-    font-size: 50px;
-    font-weight: bold;
+.contact-container .title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgb(76, 0, 255);
 }
 
-.contact-container .text .socials .discord {
-    font-size: 30px;
+.contact-container .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.contact-container .socials {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
 }
 
-.contact-container .text .socials .discord i label{
-    padding: 15px;
+.contact-container .socials div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-container .socials div:hover {
+    transform: scale(1.1);
+    color: rgb(76, 0, 255);
+}
+
+.socials .github a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials .github a:hover {
+    color: rgb(76, 0, 255)
+}
+
+.socials .linkedin a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials .linkedin a:hover {
+    color: rgb(76, 0, 255)
 }

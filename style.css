@@ -273,6 +273,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .music-player {
+        visibility: hidden;
+    }
     .menu-toggle {
         display: block;
     }
