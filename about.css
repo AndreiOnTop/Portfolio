@@ -106,13 +106,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .box div {
-        width: 15px;
-        height: 15px;
-    }
-}
-
 /* NAVIGATION BAR */
 .navhead {
     margin: 15px auto 0;
@@ -177,11 +170,6 @@ body {
     left: 0;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-}
 
 @keyframes fadeInDown {
     from {
@@ -215,45 +203,6 @@ body {
     animation: fadeInUp 1s ease-out;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .links {
-        display: none;
-        flex-direction: column; 
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background: black; 
-        z-index: 1000;
-    }
-
-    .links.active {
-        display: flex;
-    }
-
-    .links a {
-        padding: 15px 0;
-        margin: 0;
-        border-top: 1px solid rgb(76, 0, 255);
-        border-bottom: 1px solid rgb(76, 0, 255);
-    }
-
-    .links a:hover {
-        background: rgb(76, 0, 255);
-        color: #fff;
-    }
-}
-
-@media (max-width: 480px) {
-    .navhead .links a {
-        padding: 8px 10px;
-        font-size: 12px;
-    }
-}
 
 /* MUSIC PLAYER */
 .music-player {
@@ -273,30 +222,6 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-@media (max-width: 768px) {
-    .music-player {
-        width: 200px;
-        padding: 10px;
-        bottom: 10px;
-    }
-
-    #nowPlaying {
-        font-size: 14px;
-    }
-
-    #songName {
-        font-size: 14px;
-    }
-
-    .controls {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    input[type="range"] {
-        width: 100px;
-    }
-}
 
 #nowPlaying {
     font-size: 16px;
@@ -434,49 +359,6 @@ input[type="range"]:focus {
     background: #7f5af0;
 }
 
-/* */
-
-@media (max-width: 768px) {
-
-    .card {
-        padding: 8px;
-    }
-
-    .text .title {
-        font-size: 2rem;
-    }
-
-    .text .intrdoc {
-        font-size: 1rem;
-    }
-
-    .btn-container button {
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
-
-    .text .ktitle {
-        font-size: 1.8rem;
-    }
-
-    .text .infok {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .text .title {
-        font-size: 1.8rem;
-    }
-
-    .text .ktitle {
-        font-size: 1.4rem;
-    }
-
-    .highlights {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* PROGRAMMING LANGUAGES */
 .text .ktitle {
@@ -552,3 +434,105 @@ input[type="range"]:focus {
     transform: scale(0.8);
     background-color: rgb(76, 0, 255); 
 } 
+
+
+
+/* RESPONSIVE */
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .music-player {
+        visibility: visible; /* Keep it visible */
+        width: 200px; /* Reduce size */
+        bottom: 10px; /* Adjust position */
+        right: 10px; /* Adjust position */
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8); /* Add background for visibility */
+        z-index: 1000;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .links a {
+        padding: 15px 0;
+        margin: 0;
+        border-top: 1px solid rgb(76, 0, 255);
+        border-bottom: 1px solid rgb(76, 0, 255);
+    }
+
+    .links a:hover {
+        background: rgb(76, 0, 255);
+        color: #fff;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .main .text .title {
+        font-size: 24px; /* Slightly smaller */
+        padding-top: 15px; /* Adjust padding */
+    }
+
+    .main .text .intrdoc {
+        font-size: 14px;
+    }
+
+    .text .socials a {
+        font-size: 20px; /* Adjust size */
+        padding: 6px;
+    }
+
+    .text .btn button {
+        font-size: 14px;
+        padding: 8px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .navhead .links a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .text .title {
+        font-size: 18px; /* Smaller for mobile */
+    }
+
+    .text .intrdoc {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .text .socials a {
+        font-size: 18px; /* Adjust size */
+        padding: 5px; /* Adjust padding */
+    }
+
+    .text .btn button {
+        font-size: 12px;
+        padding: 6px 8px; /* Adjust padding */
+    }
+
+    .music-player {
+        width: 150px; /* Further reduce size */
+        bottom: 5px; /* Adjust position */
+        right: 5px; /* Adjust position */
+    }
+}

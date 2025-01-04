@@ -200,7 +200,7 @@ body {
         top: 60px;
         right: 0;
         width: 100%;
-        background: black; 
+        background: transparent; 
         z-index: 1000;
     }
 
