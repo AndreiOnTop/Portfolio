@@ -379,7 +379,7 @@ input[type="range"]:focus {
 }
 
 .card:hover {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.05);
     
 }
 
@@ -440,7 +440,8 @@ input[type="range"]:focus {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    background-color: white;
+    color: rgb(76, 0, 255);
 }
 
 .btn:active {
